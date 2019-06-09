@@ -36,5 +36,18 @@ public class buttons : MonoBehaviour
     public void QuitNOW()
     {
         Application.Quit();
-    } 
+    }
+    public void Easy()
+    {
+        SceneManager.LoadScene("Easylevel");
+    }
+    public void Medium()
+    {
+        SceneManager.LoadScene("Mediumlevel");
+    }
+    public void Hard()
+    {
+        SceneManager.LoadScene("Hardlevel");
+    }
+
 }

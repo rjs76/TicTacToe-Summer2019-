@@ -21,12 +21,16 @@ public class ThreebyThree : MonoBehaviour
 
     public Button mycurrentbutton;
 
+    private Button thisbutton;
     public Sprite newSpritex;
     public Sprite newSpriteo;
 
     public KeyCode key1;
     public KeyCode key2;
     public KeyCode key3;
+    public bool mouseon = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,32 +42,39 @@ public class ThreebyThree : MonoBehaviour
     {
         if (Input.GetKeyDown(key3))
         {
+            mouseon = true;
             if (Input.GetKeyDown(key1))
             {
-                xmark();
+                if (mouseon==true)
+                {
+                    xmark();
+                }
             }
             else if (Input.GetKeyDown(key2))
             {
-            omark();
+                if (mouseon == true)
+                {
+                    omark();
+                }
             }
         }
     }
-    public void xmark() {
-        // if (Input.GetKeyDown(KeyCode.Mouse1))
-        //   {
-        mycurrentbutton.image.overrideSprite = newSpritex;
-        //  }
 
+    void OnMouseOver()
+    {
+        //If your mouse hovers over the GameObject with the script attached, output this message
+        Debug.Log("Mouse is over GameObject.");
+    }
+
+    public void xmark() {
+        thisbutton = mycurrentbutton;
+        thisbutton.image.overrideSprite = newSpritex;
     }
 
     public void omark()
     {
-        //Input.GetKeyDown(KeyCode.L) && 
-      //  if (Input.GetKeyDown(KeyCode.Mouse0))
-       // {
-            //this.gameObject.GetComponent<SpriteRenderer>().sprite = newSpriteo;
-            mycurrentbutton.image.overrideSprite = newSpriteo;
-     //   }
+        thisbutton = mycurrentbutton;
+        thisbutton.image.overrideSprite = newSpriteo;
 
     }
 
