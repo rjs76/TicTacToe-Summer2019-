@@ -23,7 +23,10 @@ public class ThreebyThree : MonoBehaviour
 
     public Sprite newSpritex;
     public Sprite newSpriteo;
-  
+
+    public KeyCode key1;
+    public KeyCode key2;
+    public KeyCode key3;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,24 +36,34 @@ public class ThreebyThree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(key3))
+        {
+            if (Input.GetKeyDown(key1))
+            {
+                xmark();
+            }
+            else if (Input.GetKeyDown(key2))
+            {
+            omark();
+            }
+        }
     }
-  //  public void xmark() {
-  //      if (Input.GetKeyDown(KeyCode.C) && Input.GetKeyDown(KeyCode.Mouse0))
-  //      {
-  //          this.gameObject.GetComponent<SpriteRenderer>().sprite = newSpritex;
-  //      }
+    public void xmark() {
+        // if (Input.GetKeyDown(KeyCode.Mouse1))
+        //   {
+        mycurrentbutton.image.overrideSprite = newSpritex;
+        //  }
 
-  //  }
+    }
 
     public void omark()
     {
-        //&& Input.GetKeyDown(KeyCode.Mouse0)
-       // if (Input.GetKeyDown(KeyCode.L))
+        //Input.GetKeyDown(KeyCode.L) && 
+      //  if (Input.GetKeyDown(KeyCode.Mouse0))
        // {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = newSpriteo;
-            //mycurrentbutton.image.overrideSprite = newSpriteo;
-       // }
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = newSpriteo;
+            mycurrentbutton.image.overrideSprite = newSpriteo;
+     //   }
 
     }
 
