@@ -37,6 +37,9 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     private bool used = false;
 
+    public enum squaretype {empty, markx, marko};
+    public squaretype type;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +80,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         // thisbutton = mycurrentbutton;
         //thisbutton.image.overrideSprite = newSpritex;
         image.overrideSprite = xsprite;
+        type = squaretype.markx;
     }
 
     public void omark()
@@ -85,6 +89,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
        // thisbutton = mycurrentbutton;
        //thisbutton.image.overrideSprite = newSpriteo;
         image.overrideSprite = osprtie;
+        type = squaretype.marko;
     }
 
    // public void winCondition()
