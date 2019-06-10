@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ThreebyThree : MonoBehaviour
+/** 
+ * Holds data and handles the process for changing the X and Os on the grid of the game. 
+ * @author Riviere Seguie
+ */
+public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public GameObject Box1;
@@ -19,17 +24,18 @@ public class ThreebyThree : MonoBehaviour
  //   public GameObject MarkX;
  //   public GameObject MarkO;
 
-    public Button mycurrentbutton;
+    //public Button mycurrentbutton;
 
-    private Button thisbutton;
-    public Sprite newSpritex;
-    public Sprite newSpriteo;
+    public Image image; 
+    public Sprite xsprite; /**< when this image turns into a x sprite */
+    public Sprite osprtie;
 
     public KeyCode key1;
     public KeyCode key2;
     public KeyCode key3;
     public bool mouseon = false;
 
+    private bool used = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +46,9 @@ public class ThreebyThree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(key3))
+        if (Input.GetKeyDown(key3) && !used)
         {
-            mouseon = true;
+          //  mouseon = true;
             if (Input.GetKeyDown(key1))
             {
                 if (mouseon==true)
@@ -67,15 +73,18 @@ public class ThreebyThree : MonoBehaviour
     }
 
     public void xmark() {
-        thisbutton = mycurrentbutton;
-        thisbutton.image.overrideSprite = newSpritex;
+        used = true;
+        // thisbutton = mycurrentbutton;
+        //thisbutton.image.overrideSprite = newSpritex;
+        image.overrideSprite = xsprite;
     }
 
     public void omark()
     {
-        thisbutton = mycurrentbutton;
-        thisbutton.image.overrideSprite = newSpriteo;
-
+        used = true;
+       // thisbutton = mycurrentbutton;
+       //thisbutton.image.overrideSprite = newSpriteo;
+        image.overrideSprite = osprtie;
     }
 
    // public void winCondition()
@@ -83,7 +92,19 @@ public class ThreebyThree : MonoBehaviour
  //    //   if (this.gameObject.GetComponent<SpriteRenderer>().sprite == newSpritex) ;
  //
   //  }
-
-
+    /** 
+     * Detects whether the mouse is on the gameobject.
+     * @param pointerEventData the event data for the pointer event.
+     */
+    public void OnPointerEnter(PointerEventData pointerEventData)
+    {
+        mouseon = true;
+        Debug.Log("Mouse is over GameObject.");
+    }
+    public void OnPointerExit(PointerEventData pointerEventData)
+    {
+        mouseon = false;
+        Debug.Log("Mouse is not over GameObject.");
+    }
 
 }
