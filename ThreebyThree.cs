@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
 /** 
  * Holds data and handles the process for changing the X and Os on the grid of the game. 
  * @author Riviere Seguie
@@ -34,8 +33,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public KeyCode key2;
     public KeyCode key3;
     public bool mouseon = false;
-
     private bool used = false;
+    
 
     public enum squaretype {empty, markx, marko};
     public squaretype type;
@@ -67,6 +66,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 }
             }
         }
+
+     
     }
 
     void OnMouseOver()
