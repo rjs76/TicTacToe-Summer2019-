@@ -34,7 +34,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public KeyCode key3;
     public bool mouseon = false;
     private bool used = false;
-    
+    public int counters;
 
     public enum squaretype {empty, markx, marko};
     public squaretype type;
@@ -63,6 +63,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 if (mouseon == true)
                 {
                     omark();
+                    
                 }
             }
         }
@@ -82,6 +83,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         //thisbutton.image.overrideSprite = newSpritex;
         image.overrideSprite = xsprite;
         type = squaretype.markx;
+        counters += 1;
+        Debug.Log("Counter:" + counters);
     }
 
     public void omark()
@@ -91,6 +94,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
        //thisbutton.image.overrideSprite = newSpriteo;
         image.overrideSprite = osprtie;
         type = squaretype.marko;
+        counters += 1;
+        Debug.Log("Counter:" + counters);
     }
 
    // public void winCondition()

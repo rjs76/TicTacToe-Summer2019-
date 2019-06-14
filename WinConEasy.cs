@@ -15,6 +15,8 @@ public class WinConEasy : MonoBehaviour
     public Image image7;
     public Image image8;
     public Image image9;
+    public int counter;
+
 
     public List<ThreebyThree> Squares;
     // Start is called before the first frame update
@@ -149,21 +151,50 @@ public class WinConEasy : MonoBehaviour
         }
         //Tie if there is any marks on the grid and there are 9 of them in which tehre are no more moves
         // and the players have yet to do any of the matches above
-       // if (Squares[0].type == ThreebyThree.squaretype.markx || Squares[0].type == ThreebyThree.squaretype.marko && Squares[0].type == Squares[1].type && Squares[1].type == Squares[2].type && Squares[2].type == Squares[3].type &&
+        // if (Squares[0].type == ThreebyThree.squaretype.markx || Squares[0].type == ThreebyThree.squaretype.marko && Squares[0].type == Squares[1].type && Squares[1].type == Squares[2].type && Squares[2].type == Squares[3].type &&
         //    Squares[3].type == Squares[4].type && Squares[4].type == Squares[5].type && Squares[5].type == Squares[6].type && 
         //    Squares[6].type == Squares[7].type && Squares[7].type == Squares[8].type)
-       // {
-       //         Debug.Log("Tie");
-       //         SceneManager.LoadScene("Draw");
-       // }
+        // {
+        //         Debug.Log("Tie");
+        //         SceneManager.LoadScene("Draw");
+        // }
+        if (Squares[0].type == ThreebyThree.squaretype.markx || Squares[0].type == ThreebyThree.squaretype.marko)
+        {
+            if (Squares[1].type == ThreebyThree.squaretype.markx || Squares[1].type == ThreebyThree.squaretype.marko)
+            {
+                if (Squares[2].type == ThreebyThree.squaretype.markx || Squares[2].type == ThreebyThree.squaretype.marko)
+                {
+                    if (Squares[3].type == ThreebyThree.squaretype.markx || Squares[3].type == ThreebyThree.squaretype.marko)
+                    {
+                        if (Squares[4].type == ThreebyThree.squaretype.markx || Squares[4].type == ThreebyThree.squaretype.marko)
+                        {
+                            if (Squares[5].type == ThreebyThree.squaretype.markx || Squares[5].type == ThreebyThree.squaretype.marko)
+                            {
+                                if (Squares[6].type == ThreebyThree.squaretype.markx || Squares[6].type == ThreebyThree.squaretype.marko)
+                                {
+                                    if (Squares[7].type == ThreebyThree.squaretype.markx || Squares[7].type == ThreebyThree.squaretype.marko)
+                                    {
+                                        if (Squares[8].type == ThreebyThree.squaretype.markx || Squares[8].type == ThreebyThree.squaretype.marko)
+                                        {
+                                            SceneManager.LoadScene("Draw");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
 
     }
 
-    public void Wincon() {
+   // public void Wincon() {
 
         
 
 
-    }
+   // }
 
 }
