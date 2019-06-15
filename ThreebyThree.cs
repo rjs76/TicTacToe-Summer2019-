@@ -34,7 +34,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public KeyCode key3;
     public bool mouseon = false;
     private bool used = false;
-    public int counters;
+  //  public int counters;
 
     public enum squaretype {empty, markx, marko};
     public squaretype type;
@@ -74,7 +74,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     void OnMouseOver()
     {
         //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("Mouse is over GameObject.");
+     //   Debug.Log("Mouse is over GameObject.");
     }
 
     public void xmark() {
@@ -83,8 +83,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         //thisbutton.image.overrideSprite = newSpritex;
         image.overrideSprite = xsprite;
         type = squaretype.markx;
-        counters += 1;
-        Debug.Log("Counter:" + counters);
+        //counters += 1;
+        //Debug.Log("Counter:" + counters);
     }
 
     public void omark()
@@ -94,8 +94,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
        //thisbutton.image.overrideSprite = newSpriteo;
         image.overrideSprite = osprtie;
         type = squaretype.marko;
-        counters += 1;
-        Debug.Log("Counter:" + counters);
+       // counters += 1;
+       // Debug.Log("Counter:" + counters);
     }
 
    // public void winCondition()
@@ -110,7 +110,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
         mouseon = true;
-        Debug.Log("Mouse is over GameObject.");
+     //   Debug.Log("Mouse is over GameObject.");
     }
     public void OnPointerExit(PointerEventData pointerEventData)
     {

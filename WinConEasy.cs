@@ -15,7 +15,7 @@ public class WinConEasy : MonoBehaviour
     public Image image7;
     public Image image8;
     public Image image9;
-    public int counter;
+
 
 
     public List<ThreebyThree> Squares;

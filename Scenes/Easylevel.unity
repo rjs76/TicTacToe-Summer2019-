@@ -463,6 +463,7 @@ MonoBehaviour:
   image7: {fileID: 1424674623}
   image8: {fileID: 1241010165}
   image9: {fileID: 152086970}
+  counter: 0
   Squares:
   - {fileID: 1271922762}
   - {fileID: 2139467650}
