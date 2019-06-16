@@ -32,6 +32,7 @@ public class WinConMedium : MonoBehaviour
     public Image image24;
     public Image image25;
 
+
     public List<ThreebyThree> Squares;
     // Start is called before the first frame update
     void Start()
@@ -50,12 +51,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[0].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[0].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -64,12 +65,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[4].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[4].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -80,12 +81,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[5].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[5].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -94,12 +95,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[9].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[9].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -110,12 +111,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[10].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[10].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -124,12 +125,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[14].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[14].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -140,12 +141,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[15].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[15].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -154,12 +155,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[19].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[19].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -169,12 +170,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[20].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[20].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -183,12 +184,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[24].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[24].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -200,12 +201,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[0].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[0].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -214,12 +215,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[20].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[20].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -229,12 +230,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[1].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[1].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -243,12 +244,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[21].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[21].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -259,12 +260,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[2].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[2].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -273,12 +274,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[22].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[22].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -289,12 +290,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[3].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[3].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -303,12 +304,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[23].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[23].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -319,12 +320,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[4].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[4].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -333,12 +334,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[24].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[24].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -350,12 +351,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[0].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[0].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -364,12 +365,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[24].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[24].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -379,12 +380,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[1].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[1].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -393,12 +394,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[23].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[23].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -410,12 +411,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[4].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[4].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -424,12 +425,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[20].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[20].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -440,12 +441,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[3].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[3].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -454,12 +455,12 @@ public class WinConMedium : MonoBehaviour
             if (Squares[21].type == ThreebyThree.squaretype.markx)
             {
                 Debug.Log("PlayerX Wins");
-                SceneManager.LoadScene("PlayerXwins");
+                SceneManager.LoadScene("PlayerXwins2");
             }
             if (Squares[21].type == ThreebyThree.squaretype.marko)
             {
                 Debug.Log("PlayerO Wins");
-                SceneManager.LoadScene("PlayerOwins");
+                SceneManager.LoadScene("PlayerOwins2");
             }
 
         }
@@ -515,7 +516,7 @@ public class WinConMedium : MonoBehaviour
                                                                                                     {
                                                                                                         if (Squares[24].type == ThreebyThree.squaretype.markx || Squares[24].type == ThreebyThree.squaretype.marko)
                                                                                                         {
-                                                                                                            SceneManager.LoadScene("Draw");
+                                                                                                            SceneManager.LoadScene("Draw2");
                                                                                                         }
                                                                                                     }
                                                                                                 }

@@ -49,5 +49,17 @@ public class buttons : MonoBehaviour
     {
         SceneManager.LoadScene("Hardlevel");
     }
+    public void ContinueEasy()
+    {
+        SceneManager.LoadScene("ContinueMenu1");
+    }
+    public void ContinueMedium()
+    {
+        SceneManager.LoadScene("ContinueMenu2");
+    }
+    public void ContinueHard()
+    {
+        SceneManager.LoadScene("ContinueMenu3");
+    }
 
 }
