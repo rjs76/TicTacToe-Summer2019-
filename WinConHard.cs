@@ -3,62 +3,65 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+/** 
+ * Holds data and handles the process for changing the X and Os on the grid of the game. 
+ * @author Riviere Seguie
+ */
 public class WinConHard : MonoBehaviour
 {
-    public Image image1;
-    public Image image2;
-    public Image image3;
-    public Image image4;
-    public Image image5;
-    public Image image6;
-    public Image image7;
-    public Image image8;
-    public Image image9;
-    public Image image10;
-    public Image image11;
-    public Image image12;
-    public Image image13;
-    public Image image14;
-    public Image image15;
-    public Image image16;
-    public Image image17;
-    public Image image18;
-    public Image image19;
-    public Image image20;
-    public Image image21;
-    public Image image22;
-    public Image image23;
-    public Image image24;
-    public Image image25;
-    public Image image26;
-    public Image image27;
-    public Image image28;
-    public Image image29;
-    public Image image30;
-    public Image image31;
-    public Image image32;
-    public Image image33;
-    public Image image34;
-    public Image image35;
-    public Image image36;
-    public Image image37;
-    public Image image38;
-    public Image image39;
-    public Image image40;
-    public Image image41;
-    public Image image42;
-    public Image image43;
-    public Image image44;
-    public Image image45;
-    public Image image46;
-    public Image image47;
-    public Image image48;
-    public Image image49;
+    public Image image1;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image2;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image3;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image4;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image5;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image6;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image7;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image8;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image9;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image10;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image11;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image12;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image13;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image14;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image15;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image16;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image17;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image18;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image19;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image20;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image21;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image22;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image23;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image24;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image25;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image26;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image27;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image28;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image29;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image30;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image31;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image32;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image33;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image34;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image35;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image36;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image37;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image38;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image39;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image40;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image41;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image42;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image43;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image44;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image45;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image46;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image47;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image48;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image49;/**< is for the image so it can determine later which sprite it has after*/
 
 
 
-    public List<ThreebyThree> Squares;
+    public List<ThreebyThree> Squares;/**< Calling the List from the script "ThreebyThree"*/
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +69,10 @@ public class WinConHard : MonoBehaviour
     }
 
     // Update is called once per frame
+    /** 
+    * Will update to check as to whether the keys are pressed to check the win condition of the match
+    * Otherwise will lead to a Tie for both players
+    */
     void Update()
     {
         //Horizontal

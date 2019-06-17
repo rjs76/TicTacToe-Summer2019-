@@ -10,42 +10,45 @@ using UnityEngine.EventSystems;
 public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
-    public GameObject Box1;
-  //  public GameObject Box2;
- //   public GameObject Box3;
- //   public GameObject Box4;
- //   public GameObject Box5;
- //   public GameObject Box6;
- //   public GameObject Box7;
-  //  public GameObject Box8;
- //   public GameObject Box9;
+    public GameObject Box1; /**< is for the image so it can determine later which sprite it has after*/
+    //  public GameObject Box2;
+    //   public GameObject Box3;
+    //   public GameObject Box4;
+    //   public GameObject Box5;
+    //   public GameObject Box6;
+    //   public GameObject Box7;
+    //  public GameObject Box8;
+    //   public GameObject Box9;
 
- //   public GameObject MarkX;
- //   public GameObject MarkO;
+    //   public GameObject MarkX;
+    //   public GameObject MarkO;
 
     //public Button mycurrentbutton;
 
-    public Image image; 
+    public Image image; /**< is for the image so it can determine later which sprite it has after*/
     public Sprite xsprite; /**< when this image turns into a x sprite */
-    public Sprite osprtie;
+    public Sprite osprtie; /**< when this image turns into a o sprite */
 
-    public KeyCode key1;
-    public KeyCode key2;
-    public KeyCode key3;
-    public bool mouseon = false;
-    private bool used = false;
-  //  public int counters;
+    public KeyCode key1;/**<Custom key for changing the image to x mark*/
+    public KeyCode key2;/**<Custom key for changing the image to o mark*/
+    public KeyCode key3;/**<Custom key for making sure the mouseis changing the correct image to mark*/
+    public bool mouseon = false; /**<to initialize that the mouse is off*/
+    private bool used = false; /**<to help initialize that the mouse is off*/
+    //  public int counters;
 
-    public enum squaretype {empty, markx, marko};
-    public squaretype type;
+    public enum squaretype {empty, markx, marko};  /**<to make a list values of for the marks*/
+    public squaretype type;  /**<to initialize the inital value of the types above*/
 
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
     // Update is called once per frame
+    /** 
+    * Will update to check as to whether the keys are pressed to call either the xmark() or omark() function
+    */
+
     void Update()
     {
         if (Input.GetKeyDown(key3) && !used)
@@ -71,38 +74,26 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
      
     }
 
-    void OnMouseOver()
-    {
-        //If your mouse hovers over the GameObject with the script attached, output this message
-     //   Debug.Log("Mouse is over GameObject.");
-    }
-
+    /** 
+     * When called will change the sprite of the blank image to X sprite
+     */
     public void xmark() {
         used = true;
-        // thisbutton = mycurrentbutton;
-        //thisbutton.image.overrideSprite = newSpritex;
         image.overrideSprite = xsprite;
         type = squaretype.markx;
-        //counters += 1;
-        //Debug.Log("Counter:" + counters);
+ 
     }
-
+    /** 
+     * When called will change the sprite of the blank image to O sprite
+     */
     public void omark()
     {
         used = true;
-       // thisbutton = mycurrentbutton;
-       //thisbutton.image.overrideSprite = newSpriteo;
         image.overrideSprite = osprtie;
         type = squaretype.marko;
-       // counters += 1;
-       // Debug.Log("Counter:" + counters);
+
     }
 
-   // public void winCondition()
-  //  {
- //    //   if (this.gameObject.GetComponent<SpriteRenderer>().sprite == newSpritex) ;
- //
-  //  }
     /** 
      * Detects whether the mouse is on the gameobject.
      * @param pointerEventData the event data for the pointer event.
@@ -112,6 +103,10 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         mouseon = true;
      //   Debug.Log("Mouse is over GameObject.");
     }
+    /** 
+     * Detects whether the mouse is off the gameobject.
+     * @param pointerEventData the event data for the pointer event.
+     */
     public void OnPointerExit(PointerEventData pointerEventData)
     {
         mouseon = false;

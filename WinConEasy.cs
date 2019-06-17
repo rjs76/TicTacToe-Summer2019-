@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+/** 
+ * Holds data and handles the process for changing the X and Os on the grid of the game. 
+ * @author Riviere Seguie
+ */
 public class WinConEasy : MonoBehaviour
 {
-    public Image image1;
-    public Image image2;
-    public Image image3;
-    public Image image4;
-    public Image image5;
-    public Image image6;
-    public Image image7;
-    public Image image8;
-    public Image image9;
+    public Image image1;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image2;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image3;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image4;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image5;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image6;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image7;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image8;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image9;/**< is for the image so it can determine later which sprite it has after*/
 
-    public List<ThreebyThree> Squares;
+    public List<ThreebyThree> Squares; /**< Calling the List from the script "ThreebyThree"*/
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,11 @@ public class WinConEasy : MonoBehaviour
     }
 
     // Update is called once per frame
+    /** 
+    * Will update to check as to whether the keys are pressed to check the win condition of the match
+    * Otherwise will lead to a Tie for both players
+    */
+
     void Update()
     {
         //KEEP IN MIND EVERY NUMBER IN CODE IS 1 less then the original. For example 1 is 0(zero), and so on. 

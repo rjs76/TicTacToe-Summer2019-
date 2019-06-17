@@ -3,37 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+/** 
+ * Holds data and handles the process for changing the X and Os on the grid of the game. 
+ * @author Riviere Seguie
+ */
 public class WinConMedium : MonoBehaviour
 {
-    public Image image1;
-    public Image image2;
-    public Image image3;
-    public Image image4;
-    public Image image5;
-    public Image image6;
-    public Image image7;
-    public Image image8;
-    public Image image9;
-    public Image image10;
-    public Image image11;
-    public Image image12;
-    public Image image13;
-    public Image image14;
-    public Image image15;
-    public Image image16;
-    public Image image17;
-    public Image image18;
-    public Image image19;
-    public Image image20;
-    public Image image21;
-    public Image image22;
-    public Image image23;
-    public Image image24;
-    public Image image25;
+    public Image image1;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image2;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image3;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image4;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image5;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image6;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image7;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image8;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image9;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image10;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image11;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image12;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image13;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image14;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image15;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image16;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image17;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image18;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image19;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image20;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image21;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image22;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image23;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image24;/**< is for the image so it can determine later which sprite it has after*/
+    public Image image25;/**< is for the image so it can determine later which sprite it has after*/
 
 
-    public List<ThreebyThree> Squares;
+    public List<ThreebyThree> Squares;/**< Calling the List from the script "ThreebyThree"*/
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +44,10 @@ public class WinConMedium : MonoBehaviour
     }
 
     // Update is called once per frame
+    /** 
+   * Will update to check as to whether the keys are pressed to check the win condition of the match
+   * Otherwise will lead to a Tie for both players
+   */
     void Update()
     {
         //Horizontal
