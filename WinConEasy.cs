@@ -164,6 +164,21 @@ public class WinConEasy : MonoBehaviour
         //         Debug.Log("Tie");
         //         SceneManager.LoadScene("Draw");
         // }
+
+        bool tied = true; //Assume they tied
+        for (int i = 0; i < 9; i++)
+        {
+            //A move still exists
+            if (Squares[i].type == ThreebyThree.squaretype.empty)
+            {
+                tied = false; //They cannot have tied, a move exists
+            }
+        }
+        if(tied) //We could not find an open square
+        {
+            SceneManager.LoadScene("Draw1"); //It must be a draw
+        }
+        /**
         if (Squares[0].type == ThreebyThree.squaretype.markx || Squares[0].type == ThreebyThree.squaretype.marko)
         {
             if (Squares[1].type == ThreebyThree.squaretype.markx || Squares[1].type == ThreebyThree.squaretype.marko)
@@ -193,7 +208,7 @@ public class WinConEasy : MonoBehaviour
             }
         }
        
-
+    */
     }
 
    // public void Wincon() {

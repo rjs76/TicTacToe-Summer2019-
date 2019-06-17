@@ -39,6 +39,7 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public enum squaretype {empty, markx, marko};  /**<to make a list values of for the marks*/
     public squaretype type;  /**<to initialize the inital value of the types above*/
 
+    //public static int counter = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +60,8 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 if (mouseon==true)
                 {
                     xmark();
+                   // counter += 1;
+                   // Debug.Log("Counter" + counter);
                 }
             }
             else if (Input.GetKeyDown(key2))
@@ -66,7 +69,9 @@ public class ThreebyThree : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 if (mouseon == true)
                 {
                     omark();
-                    
+                 //   counter += 1;
+                  //  Debug.Log("Counter" + counter);
+
                 }
             }
         }
