@@ -956,161 +956,18 @@ public class WinConHard : MonoBehaviour
 
         }
         //tie
-        if (Squares[0].type == ThreebyThree.squaretype.markx || Squares[0].type == ThreebyThree.squaretype.marko)
+        bool tied = true; //Assume they tied
+        for (int i = 0; i < 49; i++)
         {
-            if (Squares[1].type == ThreebyThree.squaretype.markx || Squares[1].type == ThreebyThree.squaretype.marko)
+            //A move still exists
+            if (Squares[i].type == ThreebyThree.squaretype.empty)
             {
-                if (Squares[2].type == ThreebyThree.squaretype.markx || Squares[2].type == ThreebyThree.squaretype.marko)
-                {
-                    if (Squares[3].type == ThreebyThree.squaretype.markx || Squares[3].type == ThreebyThree.squaretype.marko)
-                    {
-                        if (Squares[4].type == ThreebyThree.squaretype.markx || Squares[4].type == ThreebyThree.squaretype.marko)
-                        {
-                            if (Squares[5].type == ThreebyThree.squaretype.markx || Squares[5].type == ThreebyThree.squaretype.marko)
-                            {
-                                if (Squares[6].type == ThreebyThree.squaretype.markx || Squares[6].type == ThreebyThree.squaretype.marko)
-                                {
-                                    if (Squares[7].type == ThreebyThree.squaretype.markx || Squares[7].type == ThreebyThree.squaretype.marko)
-                                    {
-                                        if (Squares[8].type == ThreebyThree.squaretype.markx || Squares[8].type == ThreebyThree.squaretype.marko)
-                                        {
-                                            if (Squares[9].type == ThreebyThree.squaretype.markx || Squares[9].type == ThreebyThree.squaretype.marko)
-                                            {
-                                                if (Squares[10].type == ThreebyThree.squaretype.markx || Squares[10].type == ThreebyThree.squaretype.marko)
-                                                {
-                                                    if (Squares[11].type == ThreebyThree.squaretype.markx || Squares[11].type == ThreebyThree.squaretype.marko)
-                                                    {
-                                                        if (Squares[12].type == ThreebyThree.squaretype.markx || Squares[12].type == ThreebyThree.squaretype.marko)
-                                                        {
-                                                            if (Squares[13].type == ThreebyThree.squaretype.markx || Squares[13].type == ThreebyThree.squaretype.marko)
-                                                            {
-                                                                if (Squares[14].type == ThreebyThree.squaretype.markx || Squares[14].type == ThreebyThree.squaretype.marko)
-                                                                {
-                                                                    if (Squares[15].type == ThreebyThree.squaretype.markx || Squares[15].type == ThreebyThree.squaretype.marko)
-                                                                    {
-                                                                        if (Squares[16].type == ThreebyThree.squaretype.markx || Squares[16].type == ThreebyThree.squaretype.marko)
-                                                                        {
-                                                                            if (Squares[17].type == ThreebyThree.squaretype.markx || Squares[17].type == ThreebyThree.squaretype.marko)
-                                                                            {
-                                                                                if (Squares[18].type == ThreebyThree.squaretype.markx || Squares[18].type == ThreebyThree.squaretype.marko)
-                                                                                {
-                                                                                    if (Squares[19].type == ThreebyThree.squaretype.markx || Squares[19].type == ThreebyThree.squaretype.marko)
-                                                                                    {
-                                                                                        if (Squares[20].type == ThreebyThree.squaretype.markx || Squares[20].type == ThreebyThree.squaretype.marko)
-                                                                                        {
-                                                                                            if (Squares[21].type == ThreebyThree.squaretype.markx || Squares[21].type == ThreebyThree.squaretype.marko)
-                                                                                            {
-                                                                                                if (Squares[22].type == ThreebyThree.squaretype.markx || Squares[22].type == ThreebyThree.squaretype.marko)
-                                                                                                {
-                                                                                                    if (Squares[23].type == ThreebyThree.squaretype.markx || Squares[23].type == ThreebyThree.squaretype.marko)
-                                                                                                    {
-                                                                                                        if (Squares[24].type == ThreebyThree.squaretype.markx || Squares[24].type == ThreebyThree.squaretype.marko)
-                                                                                                        {
-                                                                                                            if (Squares[25].type == ThreebyThree.squaretype.markx || Squares[25].type == ThreebyThree.squaretype.marko)
-                                                                                                            {
-                                                                                                                if (Squares[26].type == ThreebyThree.squaretype.markx || Squares[26].type == ThreebyThree.squaretype.marko)
-                                                                                                                {
-                                                                                                                    if (Squares[27].type == ThreebyThree.squaretype.markx || Squares[27].type == ThreebyThree.squaretype.marko)
-                                                                                                                    {
-                                                                                                                        if (Squares[28].type == ThreebyThree.squaretype.markx || Squares[28].type == ThreebyThree.squaretype.marko)
-                                                                                                                        {
-                                                                                                                            if (Squares[29].type == ThreebyThree.squaretype.markx || Squares[29].type == ThreebyThree.squaretype.marko)
-                                                                                                                            {
-                                                                                                                                if (Squares[30].type == ThreebyThree.squaretype.markx || Squares[30].type == ThreebyThree.squaretype.marko)
-                                                                                                                                {
-                                                                                                                                    if (Squares[31].type == ThreebyThree.squaretype.markx || Squares[31].type == ThreebyThree.squaretype.marko)
-                                                                                                                                    {
-                                                                                                                                        if (Squares[32].type == ThreebyThree.squaretype.markx || Squares[32].type == ThreebyThree.squaretype.marko)
-                                                                                                                                        {
-                                                                                                                                            if (Squares[33].type == ThreebyThree.squaretype.markx || Squares[33].type == ThreebyThree.squaretype.marko)
-                                                                                                                                            {
-                                                                                                                                                if (Squares[34].type == ThreebyThree.squaretype.markx || Squares[34].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                {
-                                                                                                                                                    if (Squares[35].type == ThreebyThree.squaretype.markx || Squares[35].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                    {
-                                                                                                                                                        if (Squares[36].type == ThreebyThree.squaretype.markx || Squares[36].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                        {
-                                                                                                                                                            if (Squares[37].type == ThreebyThree.squaretype.markx || Squares[37].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                            {
-                                                                                                                                                                if (Squares[38].type == ThreebyThree.squaretype.markx || Squares[38].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                {
-                                                                                                                                                                    if (Squares[39].type == ThreebyThree.squaretype.markx || Squares[39].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                    {
-                                                                                                                                                                        if (Squares[40].type == ThreebyThree.squaretype.markx || Squares[40].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                        {
-                                                                                                                                                                            if (Squares[41].type == ThreebyThree.squaretype.markx || Squares[41].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                            {
-                                                                                                                                                                                if (Squares[42].type == ThreebyThree.squaretype.markx || Squares[42].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                {
-                                                                                                                                                                                    if (Squares[43].type == ThreebyThree.squaretype.markx || Squares[43].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                    {
-                                                                                                                                                                                        if (Squares[44].type == ThreebyThree.squaretype.markx || Squares[44].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                        {
-                                                                                                                                                                                            if (Squares[45].type == ThreebyThree.squaretype.markx || Squares[45].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                            {
-                                                                                                                                                                                                if (Squares[46].type == ThreebyThree.squaretype.markx || Squares[46].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                                {
-                                                                                                                                                                                                    if (Squares[47].type == ThreebyThree.squaretype.markx || Squares[47].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                                    {
-                                                                                                                                                                                                        if (Squares[48].type == ThreebyThree.squaretype.markx || Squares[48].type == ThreebyThree.squaretype.marko)
-                                                                                                                                                                                                        {
-                                                                                                                                                                                                                SceneManager.LoadScene("Draw3");
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                }
-                                                                                                                                                                                            }
-                                                                                                                                                                                        }
-                                                                                                                                                                                    }
-
-
-                                                                                                                                                                                }
-                                                                                                                                                                            }
-                                                                                                                                                                        }
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                            }
-                                                                                                                                                        }
-                                                                                                                                                    }
-                                                                                                                                                }
-
-
-                                                                                                                                            }
-                                                                                                                                        }
-                                                                                                                                    }
-                                                                                                                                }
-                                                                                                                            }
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                }
-                                                                                                            }
-                                                                                                        }
-                                                                                                    }
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-
-
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-
-
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                tied = false; //They cannot have tied, a move exists
             }
+        }
+        if(tied) //We could not find an open square
+        {
+            SceneManager.LoadScene("Draw3"); //It must be a draw
         }
 
     }
