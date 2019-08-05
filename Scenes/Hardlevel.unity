@@ -2444,6 +2444,7 @@ GameObject:
   - component: {fileID: 728451532}
   - component: {fileID: 728451531}
   - component: {fileID: 728451534}
+  - component: {fileID: 728451535}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2523,7 +2524,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728451530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd95f7351d822c349993d05f9a9ef327, type: 3}
   m_Name: 
@@ -2627,6 +2628,120 @@ MonoBehaviour:
   - {fileID: 339671935}
   - {fileID: 977974210}
   - {fileID: 2141697814}
+--- !u!114 &728451535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728451530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96319585ec463f4ea9278cd0e1171fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
+  image1: {fileID: 495387311}
+  image2: {fileID: 292775074}
+  image3: {fileID: 800767043}
+  image4: {fileID: 1109314354}
+  image5: {fileID: 133833462}
+  image6: {fileID: 760250269}
+  image7: {fileID: 1424439622}
+  image8: {fileID: 1407984135}
+  image9: {fileID: 1153637953}
+  image10: {fileID: 1982254137}
+  image11: {fileID: 2136385199}
+  image12: {fileID: 1657020848}
+  image13: {fileID: 114644833}
+  image14: {fileID: 1972396326}
+  image15: {fileID: 937424296}
+  image16: {fileID: 1356528695}
+  image17: {fileID: 1038311913}
+  image18: {fileID: 446382964}
+  image19: {fileID: 1535878697}
+  image20: {fileID: 1864136}
+  image21: {fileID: 818102141}
+  image22: {fileID: 1826738939}
+  image23: {fileID: 2034334427}
+  image24: {fileID: 1153392156}
+  image25: {fileID: 1327139111}
+  image26: {fileID: 849608503}
+  image27: {fileID: 1855337137}
+  image28: {fileID: 1165714677}
+  image29: {fileID: 1275417111}
+  image30: {fileID: 1017274489}
+  image31: {fileID: 1643176951}
+  image32: {fileID: 84750272}
+  image33: {fileID: 224543260}
+  image34: {fileID: 424810534}
+  image35: {fileID: 93479256}
+  image36: {fileID: 543329315}
+  image37: {fileID: 1102726951}
+  image38: {fileID: 1494635622}
+  image39: {fileID: 1035079646}
+  image40: {fileID: 947907461}
+  image41: {fileID: 835447672}
+  image42: {fileID: 529861399}
+  image43: {fileID: 289918}
+  image44: {fileID: 1424375257}
+  image45: {fileID: 1626850025}
+  image46: {fileID: 1243020018}
+  image47: {fileID: 339671936}
+  image48: {fileID: 977974211}
+  image49: {fileID: 2141697815}
+  Squares:
+  - {fileID: 495387310}
+  - {fileID: 292775073}
+  - {fileID: 800767042}
+  - {fileID: 1109314353}
+  - {fileID: 133833461}
+  - {fileID: 760250268}
+  - {fileID: 1424439621}
+  - {fileID: 1407984134}
+  - {fileID: 1153637952}
+  - {fileID: 1982254136}
+  - {fileID: 2136385198}
+  - {fileID: 1657020847}
+  - {fileID: 114644832}
+  - {fileID: 1972396325}
+  - {fileID: 937424295}
+  - {fileID: 1356528694}
+  - {fileID: 1038311912}
+  - {fileID: 446382963}
+  - {fileID: 1535878696}
+  - {fileID: 1864135}
+  - {fileID: 818102140}
+  - {fileID: 1826738938}
+  - {fileID: 2034334426}
+  - {fileID: 1153392155}
+  - {fileID: 1327139110}
+  - {fileID: 849608502}
+  - {fileID: 1855337136}
+  - {fileID: 1165714676}
+  - {fileID: 1275417110}
+  - {fileID: 1017274488}
+  - {fileID: 1643176950}
+  - {fileID: 84750271}
+  - {fileID: 224543259}
+  - {fileID: 424810533}
+  - {fileID: 93479255}
+  - {fileID: 543329314}
+  - {fileID: 1102726950}
+  - {fileID: 1494635621}
+  - {fileID: 1035079645}
+  - {fileID: 947907460}
+  - {fileID: 835447671}
+  - {fileID: 529861398}
+  - {fileID: 289917}
+  - {fileID: 1424375256}
+  - {fileID: 1626850024}
+  - {fileID: 1243020017}
+  - {fileID: 339671935}
+  - {fileID: 977974210}
+  - {fileID: 2141697814}
+  scene:
+    m_Handle: 0
 --- !u!1001 &760250266
 PrefabInstance:
   m_ObjectHideFlags: 0

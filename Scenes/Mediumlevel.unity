@@ -3260,6 +3260,7 @@ GameObject:
   - component: {fileID: 1619158058}
   - component: {fileID: 1619158057}
   - component: {fileID: 1619158056}
+  - component: {fileID: 1619158060}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3274,7 +3275,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619158055}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d33ef60ea521ecd40ac5c6cb918275a9, type: 3}
   m_Name: 
@@ -3395,6 +3396,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619158060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619158055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96319585ec463f4ea9278cd0e1171fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 2
+  image1: {fileID: 592122053}
+  image2: {fileID: 531427900}
+  image3: {fileID: 1716529728}
+  image4: {fileID: 592785091}
+  image5: {fileID: 1754556971}
+  image6: {fileID: 991983639}
+  image7: {fileID: 1390018046}
+  image8: {fileID: 2146042162}
+  image9: {fileID: 1022270655}
+  image10: {fileID: 694530976}
+  image11: {fileID: 416082730}
+  image12: {fileID: 237737320}
+  image13: {fileID: 1489342913}
+  image14: {fileID: 890804780}
+  image15: {fileID: 1841704572}
+  image16: {fileID: 793238995}
+  image17: {fileID: 679509628}
+  image18: {fileID: 1919770044}
+  image19: {fileID: 1673423005}
+  image20: {fileID: 1497283304}
+  image21: {fileID: 470004525}
+  image22: {fileID: 973345792}
+  image23: {fileID: 910192280}
+  image24: {fileID: 295760791}
+  image25: {fileID: 665325312}
+  image26: {fileID: 0}
+  image27: {fileID: 0}
+  image28: {fileID: 0}
+  image29: {fileID: 0}
+  image30: {fileID: 0}
+  image31: {fileID: 0}
+  image32: {fileID: 0}
+  image33: {fileID: 0}
+  image34: {fileID: 0}
+  image35: {fileID: 0}
+  image36: {fileID: 0}
+  image37: {fileID: 0}
+  image38: {fileID: 0}
+  image39: {fileID: 0}
+  image40: {fileID: 0}
+  image41: {fileID: 0}
+  image42: {fileID: 0}
+  image43: {fileID: 0}
+  image44: {fileID: 0}
+  image45: {fileID: 0}
+  image46: {fileID: 0}
+  image47: {fileID: 0}
+  image48: {fileID: 0}
+  image49: {fileID: 0}
+  Squares:
+  - {fileID: 592122052}
+  - {fileID: 531427899}
+  - {fileID: 1716529727}
+  - {fileID: 592785090}
+  - {fileID: 1754556970}
+  - {fileID: 991983638}
+  - {fileID: 1390018045}
+  - {fileID: 2146042161}
+  - {fileID: 1022270654}
+  - {fileID: 694530975}
+  - {fileID: 416082729}
+  - {fileID: 237737319}
+  - {fileID: 1489342912}
+  - {fileID: 890804779}
+  - {fileID: 1841704571}
+  - {fileID: 793238994}
+  - {fileID: 679509627}
+  - {fileID: 1919770043}
+  - {fileID: 1673423004}
+  - {fileID: 1497283303}
+  - {fileID: 470004524}
+  - {fileID: 973345791}
+  - {fileID: 910192279}
+  - {fileID: 295760790}
+  - {fileID: 665325311}
+  scene:
+    m_Handle: 0
 --- !u!1 &1633336233
 GameObject:
   m_ObjectHideFlags: 0

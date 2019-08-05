@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 203415263}
   - component: {fileID: 203415262}
   - component: {fileID: 203415265}
+  - component: {fileID: 203415266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -449,7 +450,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203415261}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15f0f07795048744184acd90689cf0fc, type: 3}
   m_Name: 
@@ -473,6 +474,80 @@ MonoBehaviour:
   - {fileID: 1424674622}
   - {fileID: 1241010164}
   - {fileID: 152086969}
+--- !u!114 &203415266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203415261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96319585ec463f4ea9278cd0e1171fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  image1: {fileID: 1271922763}
+  image2: {fileID: 2139467651}
+  image3: {fileID: 2071706291}
+  image4: {fileID: 1274265630}
+  image5: {fileID: 1382732307}
+  image6: {fileID: 1463837233}
+  image7: {fileID: 1424674623}
+  image8: {fileID: 1241010165}
+  image9: {fileID: 152086970}
+  image10: {fileID: 0}
+  image11: {fileID: 0}
+  image12: {fileID: 0}
+  image13: {fileID: 0}
+  image14: {fileID: 0}
+  image15: {fileID: 0}
+  image16: {fileID: 0}
+  image17: {fileID: 0}
+  image18: {fileID: 0}
+  image19: {fileID: 0}
+  image20: {fileID: 0}
+  image21: {fileID: 0}
+  image22: {fileID: 0}
+  image23: {fileID: 0}
+  image24: {fileID: 0}
+  image25: {fileID: 0}
+  image26: {fileID: 0}
+  image27: {fileID: 0}
+  image28: {fileID: 0}
+  image29: {fileID: 0}
+  image30: {fileID: 0}
+  image31: {fileID: 0}
+  image32: {fileID: 0}
+  image33: {fileID: 0}
+  image34: {fileID: 0}
+  image35: {fileID: 0}
+  image36: {fileID: 0}
+  image37: {fileID: 0}
+  image38: {fileID: 0}
+  image39: {fileID: 0}
+  image40: {fileID: 0}
+  image41: {fileID: 0}
+  image42: {fileID: 0}
+  image43: {fileID: 0}
+  image44: {fileID: 0}
+  image45: {fileID: 0}
+  image46: {fileID: 0}
+  image47: {fileID: 0}
+  image48: {fileID: 0}
+  image49: {fileID: 0}
+  Squares:
+  - {fileID: 1271922762}
+  - {fileID: 2139467650}
+  - {fileID: 2071706290}
+  - {fileID: 1274265629}
+  - {fileID: 1382732306}
+  - {fileID: 1463837232}
+  - {fileID: 1424674622}
+  - {fileID: 1241010164}
+  - {fileID: 152086969}
+  scene:
+    m_Handle: 0
 --- !u!1001 &238030512
 PrefabInstance:
   m_ObjectHideFlags: 0
