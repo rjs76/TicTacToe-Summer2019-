@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+/** 
+ * Handles the Win conditions of the different levels 
+ * @author Riviere Seguie
+ */
 public class AllWinCondtions : MonoBehaviour
 {
     public int level;
